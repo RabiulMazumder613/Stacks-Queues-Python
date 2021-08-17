@@ -45,7 +45,7 @@ class Queue():
             self.length += 1
         
     # Removes the front element of the queue  
-    # If the queue is empty, it will print an apropriate message  
+    # If the queue is empty, it will print an appropriate message  
     def dequeue(self):
         if self.last == None:
             print("Queue is Empty")
