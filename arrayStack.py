@@ -1,5 +1,9 @@
-class Stack():
+#We can insert and delete elements only at the end of the array(the top of the stack)
+#Python comes built-in with lists which are basically arrays.
+#They contain functionalities like append and pop which correspond to the push and pop methods of stacks respectively
+#The time complexities of different operations are same as that for the inked list implementation of stacks
 
+class Stack():
     # The constructor consists of only an empty array
     # as length comes built-in with arrays(lists)
     def __init__(self):
@@ -16,15 +20,20 @@ class Stack():
 
     # For push operation, we use the built-in append method of lists, 
     # which appends/pushes/inserts an element at the end of the list(top of the stack)
+    # The time complexity will be O(1)
     def push(self, data):
         self.array.append(data)
 
+    #For pop operation, we use thebuilt-in pop method of lists, which removes the last element of the list(top element of the stack)
+    #Time complexity of pop operation for the last element of the list is O(1).
     def pop(self):
         if len(self.array) != 0:
             self.array.pop()
         else:
             print("Stack is empty")
 
+    #Stack follows LIFO, so for the print operation, we have to print the last element of the list first.
+    #This will require a loop traversing the entire array, so the complexity is O(n)            
     def print_stack(self):
         if len(self.array) == 0:
             print("Stack empty")
