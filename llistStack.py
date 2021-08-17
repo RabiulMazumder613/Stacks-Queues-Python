@@ -17,7 +17,7 @@ class Stack():
             return None
         return self.top.data
 
-    # Insert an element at the top of the stack
+    # Insert an element at the top of the stack time complexity is O(1)
     def push(self, data):
         new_Node = Node(data)
         # If the stack is empty, 
@@ -36,7 +36,7 @@ class Stack():
             self.top = new_Node 
             self.length += 1
 
-    # Remove the top element from the stack
+    # Remove the top element from the stack its time complexity is O(1)
     def pop(self):
         # If the stack is empty print this message below
         if self.top is None:  # Alternative: (if self.length == 0: )
@@ -52,6 +52,7 @@ class Stack():
                 self.bottom = None
 
     #Finally we'll implement a print method which prints the elements of the stack from top to bottom
+    #This will be an O(n) operation as we'll obviously have to traverse the entire linked list to print all elelments
     def print_stack(self):
         if self.top == None:
             print("Stack empty")
