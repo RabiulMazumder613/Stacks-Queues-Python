@@ -95,7 +95,7 @@ my_queue.dequeue()
 my_queue.print_queue()
 # Queue Empty"
 
-print("First Element:",my_queue.first)
+print("First Element:",my_queue.peek())
 print("Last Element:",my_queue.last)
 
 print("\nQueue Length:",my_queue.length)
