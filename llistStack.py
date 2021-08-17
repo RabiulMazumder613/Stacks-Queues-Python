@@ -1,3 +1,12 @@
+#Stacks are linear data-structures which can be implemented using either stacks or linked lists
+#Insertion and deletion of elements in a stack take place from one end only.
+#Stacks follow the LIFO rule - Last In First Out, where the last element that is inserted, is the first element that comes out.
+#The main operations that can be performed on a stack , with their time complexities are as follows:
+#Push (Insert) - O(1)
+#Pop (Remove) - O(1)
+#Peek (Retrieve the top element) - O(1)
+
+#Here is a stack implemented using linked lists
 class Node():
     def __init__(self, data, next=None):
         self.data = data # Stores the value of the node
